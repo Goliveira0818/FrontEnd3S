@@ -1,15 +1,106 @@
-*
-{
-    box-sizing: border-box;
+@font-face {
+    font-family: Architects;
+    src: url(../css/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
+}
 
-    text-decoration: none;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body
 {
-    min-height: 98vh;
-    width: 97vw;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right top, rgb(10, 176, 242) 0%, rgb(196, 95, 221) 75%, rgb(62, 200, 218)100%);
+    background-repeat: no-repeat;
+}
 
-    background-image: linear-gradient(to right top, rgb(10, 176, 242) 0%, rgb(59, 224, 33) 75%, rgb(255, 255, 11)100%);
+.container 
+{
 
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+   /* border: 1px solid rgb(220, 31, 31);*/
+}
+.container--flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+.form-header__image-perfil{
+    width: 100px;
+    padding: 20px;
+     box-shadow: 0 0 7px rgb(61, 57, 57);
+}
+
+.form--header__title{
+    color: #DED27C;
+    font-family: Architects, sans-serif;
+}
+
+.form-header__text {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.form-contact{
+    padding: 20px; 
+}
+
+.form-contact__Linha{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+   /* height: 60px;*/
+   /* border: 1px solid yellowgreen;*/
+}
+.form-contact__col-a{
+    width: 20%;
+    height: 100%;
+    /*border: 1px solid red;*/
+
+}
+.form-contact__col-b{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    height: 100%;
+   /* border: 1px solid red;*/
+}
+.form-contact__label{
+    color: white;
+    font-weight: 500;
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.form-contact__input{
+    padding: 5px 10px;
+    height: 30px;
+    color: #18a2c9;
+    border: none;
+    box-shadow: 0 0 10px rgba(rgb(255, 255, 255,0.2));
+    outline:none;
+    border-radius: 3px;
+    transition: backgroud-color 0.4s, color 0.4s;
+
+}
+.form-contact__input::placeholder{
+    color: #18a2c9;
+}
+.form-contact__input:focus{
+    background-color: #18a2c9;
+    color: white;
+    box-shadow: 0 0 15px rgba(rgb(255, 255, 255,0.4));
+}
+
+.form-contact__input--metade{
+       width: 48%;
 }
