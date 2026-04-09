@@ -1,0 +1,15 @@
+*
+{
+    box-sizing: border-box;
+
+    text-decoration: none;
+}
+
+body
+{
+    min-height: 98vh;
+    width: 97vw;
+
+    background-image: linear-gradient(to right top, rgb(10, 176, 242) 0%, rgb(59, 224, 33) 75%, rgb(255, 255, 11)100%);
+
+}
