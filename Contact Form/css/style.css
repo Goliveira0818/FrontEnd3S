@@ -3,7 +3,6 @@
     src: url(../css/fonts/Architects_Daughter/ArchitectsDaughter-Regular.ttf);
 }
 
-
 *{
     margin: 0;
     padding: 0;
@@ -12,35 +11,33 @@
 
 body
 {
-    width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
     background-image: linear-gradient(to right top, rgb(10, 176, 242) 0%, rgb(196, 95, 221) 75%, rgb(62, 200, 218)100%);
     background-repeat: no-repeat;
 }
 
-.container 
-{
-
+.container {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-   /* border: 1px solid rgb(220, 31, 31);*/
 }
-.container--flex{
+
+.container--flex {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-
 }
-.form-header__image-perfil{
+
+.form-header__image-perfil {
     width: 100px;
-    padding: 20px;
-     box-shadow: 0 0 7px rgb(61, 57, 57);
+    height: 50px;
+
+    box-shadow: 0px 0px 7px rgb(17, 33, 90);
 }
 
-.form--header__title{
-    color: #DED27C;
+.form-header__title {
+    color: rgb(242, 242, 18);
     font-family: Architects, sans-serif;
 }
 
@@ -49,58 +46,151 @@ body
 }
 
 .form-contact{
-    padding: 20px; 
+    padding: 20px;
 }
 
-.form-contact__Linha{
+
+.form-contact__linha{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
     width: 100%;
     margin-bottom: 15px;
-   /* height: 60px;*/
-   /* border: 1px solid yellowgreen;*/
+    /* height: 60px; 
+    border: 1px solid red;*/
+    
 }
-.form-contact__col-a{
-    width: 20%;
-    height: 100%;
-    /*border: 1px solid red;*/
 
+.form-contact__col-a {
+    width: 15%;
+    height: 100%;
+    /*border: 1px solid rgb(25, 0, 255);*/
+    display: none;
 }
-.form-contact__col-b{
+
+.form-contact__col-b {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    width: 100%;
     height: 100%;
-   /* border: 1px solid red;*/
+   /* border: 1px solid rgb(255, 0, 98);*/
 }
-.form-contact__label{
-    color: white;
-    font-weight: 500;
-    font-size: 18px;
+
+/*tudo que e padrao ficara aqui*/
+
+.form-contact__label {
     font-family: 'Courier New', Courier, monospace;
-
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-weight: 500;
 }
-.form-contact__input{
-    padding: 5px 10px;
-    height: 30px;
-    color: #18a2c9;
-    border: none;
-    box-shadow: 0 0 10px rgba(rgb(255, 255, 255,0.2));
-    outline:none;
+
+.form-contact__input {
+    height: 35px;
     border-radius: 3px;
-    transition: backgroud-color 0.4s, color 0.4s;
+    /*box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5s);*/
+    padding: 5px 10px;
+    outline: none;
+    border: none;
+}
 
-}
-.form-contact__input::placeholder{
-    color: #18a2c9;
-}
-.form-contact__input:focus{
-    background-color: #18a2c9;
-    color: white;
-    box-shadow: 0 0 15px rgba(rgb(255, 255, 255,0.4));
+.form-contact__input:focus {
+    background-color:rgb(255, 255, 255);
+    color: black;
+    box-shadow: 0px 0px 15px #ffffff;
 }
 
 .form-contact__input--metade{
-       width: 48%;
+
+    width: 48%;
+}
+
+.form-contact__input--inteiro{
+
+    width: 100%;
+}
+
+.form-contact__input--terco{
+
+    width: 32%;
+}
+
+.form-contact__input--quarto{
+
+    width: 25%;
+}
+
+.form-contact_anotacoes{
+    width: 100%;
+    height: 150px;
+    border-radius: 3px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+
+.button {
+    display: center;
+    padding: 10px;
+    width: 40%;
+    margin: 10px 0 20px;
+    font-family: 'Noto Sans Balinese', sans-serif;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    border: 1px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: opacity .7s;
+    background-color: transparent;
+}
+
+.button:hover {
+    opacity: 70%;
+}
+
+.form-contact__col-b--botao{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/*Celular*/
+@media (max-width: 768px) {
+  .form-contact__linha {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .form-contact__col-a {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+
+  .form-contact__col-b {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-contact__input--metade {
+    width: 100%;
+    max-width: 100%;
+  }
+  .form-contact__input--terco {
+    width: 100%;
+    max-width: 100%;
+  }
+  .form-contact__input--quarto {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+  }
 }
