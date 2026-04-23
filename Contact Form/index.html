@@ -25,24 +25,24 @@
                     </div>
 
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--metade" type="text" id="nome" name="nome"
+                        <input class="form-contact__input form-contact__input--metade" type="text" id="Nome" name="Nome"
                             placeholder="Nome">
-                        <input class="form-contact__input form-contact__input--metade" type="text" id="sobrenome"
-                            name="sobrenome" placeholder="Sobrenome">
+                        <input class="form-contact__input form-contact__input--metade" type="text" id="Sobrenome"
+                            name="Sobrenome" placeholder="Sobrenome">
                     </div>
                 </div>
 
 
 
-            <div class="form-contact__linha">
-                <div class="form-contact__col-a">
-                    <label class="form-contact__label" for="">E-mail</label>
+                <div class="form-contact__linha">
+                    <div class="form-contact__col-a">
+                        <label class="form-contact__label" for="">Email</label>
+                    </div>
+                    <div class="form-contact__col-b">
+                        <input class="form-contact__input form-contact__input--inteiro" type="text" id="Email"
+                            name="Email" placeholder="Email">
+                    </div>
                 </div>
-                <div class="form-contact__col-b">
-                    <input class="form-contact__input form-contact__input--inteiro" type="text" id="email" name="email"
-                        placeholder="E-mail">
-                </div>
-            </div>
 
 
                 <div class="form-contact__linha">
@@ -50,8 +50,10 @@
                         <label class="form-contact__label" for="">Telefone</label>
                     </div>
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="+55" name="+55" placeholder="+55">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="ddd" name="ddd" placeholder="DDD">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Telefone" name="+55"
+                            placeholder="+55">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="ddd" name="ddd"
+                            placeholder="DDD">
                         <input class="form-contact__input form-contact__input--terco" type="text" id="ex: 99999-9999"
                             name="ex: 99999-9999" placeholder="Exemplo: 99999-9999">
                     </div>
@@ -61,10 +63,16 @@
                     <div class="form-contact__col-a">
                         <label class="form-contact__label" for="">Endereço</label>
                     </div>
+                    
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--quarto" type="text" id="cep" name="cep" placeholder="CEP">
-                        <input class="form-contact__input form-contact__input--metade" type="text" id="rua" name="rua" placeholder="Rua">
-                        <input class="form-contact__input form-contact__input--quarto" type="text" id="n°" name="n°" placeholder="N°">
+                        <input class="form-contact__input form-contact__input--quarto" type="text" id="Endereço" name="cep"
+                            placeholder="CEP"
+                            onblur="buscarEndereco(this.value);"
+                            >
+                        <input class="form-contact__input form-contact__input--metade" type="text" id="rua" name="rua"
+                            placeholder="Rua">
+                        <input class="form-contact__input form-contact__input--quarto" type="text" id="n°" name="n°"
+                            placeholder="N°">
                     </div>
                 </div>
                 <div class="form-contact__linha">
@@ -72,9 +80,12 @@
                         <label class="form-contact__label" for=""></label>
                     </div>
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="complemento" name="complemento" placeholder="Complemento">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="Bairro" name="Bairro" placeholder="Bairro">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="Cidade" name="Cidade" placeholder="Cidade">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="complemento"
+                            name="complemento" placeholder="Complemento">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Bairro"
+                            name="Bairro" placeholder="Bairro">
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Cidade"
+                            name="Cidade" placeholder="Cidade">
                     </div>
                 </div>
                 <div class="form-contact__linha">
@@ -82,18 +93,20 @@
                         <label class="form-contact__label" for=""></label>
                     </div>
                     <div class="form-contact__col-b">
-                        <input class="form-contact__input form-contact__input--terco" type="text" id="Estado" name="Estado" placeholder="Estado">
-                       
+                        <input class="form-contact__input form-contact__input--terco" type="text" id="Estado"
+                            name="Estado" placeholder="Estado">
+
                     </div>
                 </div>
 
                 <div class="form-contact__linha">
                     <div class="form-contact__col-a">
-                        <label class="form-contact__label" for="">Anotações</label>
+                        <label class="form-contact__label" for="Anotacoes">Anotações</label>
                     </div>
 
                     <div class="form-contact__col-b">
-                        <textarea class="form-contact__input form-contact__input--inteiro form-contact_anotacoes" id="Suas anotações aqui..." name="Suas anotações aqui..."
+                        <textarea class="form-contact__input form-contact__input--inteiro form-contact_anotacoes"
+                            id="Anotacoes" name="Anotacoes"
                             placeholder="Suas anotações aqui..."></textarea>
                     </div>
                 </div>
@@ -103,8 +116,10 @@
                         <label class="form-contact__label" for=""></label>
                     </div>
                     <div class="form-contact__col-b form-contact__col-b--botao">
-                        <input class="form-contact__input form-contact__input--botao form-contact__input--metade button" type="submit" value="Cadastrar">
-                        <input class="form-contact__input form-contact__input--botao form-contact__input--metade button" type="submit" value="Limpar">
+                        <input class="form-contact__input form-contact__input--botao form-contact__input--metade button"
+                          onclick="validarFormulario()"  type="button" value="Cadastrar">
+                        <input class="form-contact__input form-contact__input--botao form-contact__input--metade button"
+                            type="submit" value="Limpar">
                     </div>
 
     </main>
@@ -116,8 +131,10 @@
         Todos os direitos reservados
     </footer>
 
+    <script src="./js/script.js"></script>
 
-    
+
+
 </body>
 
 </html>
