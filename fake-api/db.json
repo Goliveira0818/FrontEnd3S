@@ -56,5 +56,31 @@
   ],
   "frutas": [],
   "jogos": [],
+  "imc": [
+    {
+      "nome": "gustavo ",
+      "altura": 1.98,
+      "peso": 98,
+      "IMC": "25.00",
+      "situacao": "Sobrepeso",
+      "id": "a9_2ilbd6ys"
+    },
+    {
+      "nome": "gustavo ",
+      "altura": 1.98,
+      "peso": 98,
+      "IMC": "25.00",
+      "situacao": "Sobrepeso",
+      "id": "a0SRstza3qQ"
+    },
+    {
+      "nome": "gustavo ",
+      "altura": 1.98,
+      "peso": 98,
+      "IMC": "25.00",
+      "situacao": "Sobrepeso",
+      "id": "0PgP07-Yp28"
+    }
+  ],
   "$schema": "./node_modules/json-server/schema.json"
 }

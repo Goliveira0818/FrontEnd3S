@@ -87,6 +87,10 @@ table th, table td {
     border: 1px solid grey;
 }
 
+table td:first-of-type{
+    text-transform: capitalize;
+}
+
 table th { font-weight: bold !important; }
 
 table thead tr {
@@ -94,7 +98,7 @@ table thead tr {
     color: #f4eade;
 }
 
-/* 
+/* s
     (odd) para linhas ímpares e 
     (even) para linhas pares
 */
@@ -106,6 +110,32 @@ table tbody { text-align: center; }
 
 
 table td:first-of-type { text-align: left; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* tablets */
 
