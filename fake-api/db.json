@@ -1,0 +1,60 @@
+{
+  "usuarios": [
+    {
+      "nome": "Roberto Carlos",
+      "idade": 67,
+      "email": "Roberto@gmail.com",
+      "id": "1"
+    },
+    {
+      "id": "2",
+      "nome": "Valentina Oliveira",
+      "idade": 10,
+      "email": "Valentina@gmail.com"
+    },
+    {
+      "nome": "Alice ",
+      "idade": 6,
+      "email": "Alice@gmail.com",
+      "id": "OMavAShL6Ww"
+    },
+    {
+      "nome": "Alice ",
+      "idade": 6,
+      "email": "Alice@gmail.com",
+      "id": "nZwxF90QWlg"
+    },
+    {
+      "nome": "Alice ",
+      "idade": 6,
+      "email": "Alice@gmail.com",
+      "id": "1I1it_8xaMc"
+    }
+  ],
+  "post": [
+    {
+      "id": "1",
+      "texto": " eu te amo mil milhoes",
+      "qtdCurtidas": "56",
+      "imagem": "https://t.ctcdn.com.br/gzcMsAT56f7vZ30WPwIfmLTVoP4=/48x27:931x524/1200x675/smart/i371015.jpeg"
+    },
+    {
+      "texto": "post aleatorio",
+      "qtdCurtidas": "250",
+      "imagem": "https://upload.wikimedia.org/wikipedia/pt/thumb/a/a8/Free_fire_battlegrounds.jpg/250px-Free_fire_battlegrounds.jpg",
+      "id": "6"
+    },
+    {
+      "id": "RpJjbStELwQ"
+    },
+    {
+      "id": "4NQCrypDTy8",
+      "texto": "e isso mesmo",
+      "qtdCurtidas": "23",
+      "imagem": "https://t.ctcdn.com.br/gzcMsAT56f7vZ30WPwIfmLTVoP4=/48x27:931x524/1200x675/smart/i371015.jpeg"
+    }
+  ],
+  "frutas": [],
+  "jogos": [],
+  "$schema": "./node_modules/json-server/schema.json"
+}
