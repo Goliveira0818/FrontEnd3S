@@ -1,0 +1,61 @@
+{
+  "produtos": [
+    {
+      "id": "1",
+      "nome": "Microondas",
+      "preco": 1099.99,
+      "imagem": "microondas",
+      "descricao": "Panasonic Micro-ondas 34L Inox Antibactéria 220v NN-ST67LSRU"
+    },
+    {
+      "id": "2",
+      "nome": "Geladeira",
+      "preco": 4499.99,
+      "imagem": "geladeira",
+      "descricao": "Geladeira Electrolux Top Freezer 2 Portas 400l Dfx44 Inox Inox"
+    },
+    {
+      "id": "3",
+      "nome": "Ventilador",
+      "preco": 120,
+      "imagem": "ventilador",
+      "descricao": "MONDIAL Ventilador de Mesa 30cm Super Power, Preto, 60W, 220V - VSP-30-B"
+    },
+    {
+      "descricao": "Panasonic Micro-ondas 34L Inox Antibactéria 220v NN-ST67LSRU",
+      "produto": "microondas",
+      "preco": 1099.99,
+      "imagem": "http://localhost:5173/public/imagens/microondas.jpg",
+      "id": "eHLVZyaAZT8"
+    },
+    {
+      "descricao": "Panasonic Micro-ondas 34L Inox Antibactéria 220v NN-ST67LSRU",
+      "produto": "microondas",
+      "preco": 1099.99,
+      "imagem": "http://localhost:5173/public/imagens/microondas.jpg",
+      "id": "TrIyHl4s3D8"
+    },
+    {
+      "descricao": "Panasonic Micro-ondas 34L Inox Antibactéria 220v NN-ST67LSRU",
+      "produto": "microondas",
+      "preco": 1099.99,
+      "imagem": "http://localhost:5173/public/imagens/microondas.jpg",
+      "id": "fa8MeWJOAkI"
+    },
+    {
+      "descricao": "Panasonic Micro-ondas 34L Inox Antibactéria 220v NN-ST67LSRU",
+      "produto": "microondas",
+      "preco": 1099.99,
+      "imagem": "http://localhost:5173/public/imagens/microondas.jpg",
+      "id": "6z90iZRlCXA"
+    },
+    {
+      "descricao": "Panasonic Micro-ondas 34L Inox Antibactéria 220v NN-ST67LSRU",
+      "produto": "microondas",
+      "preco": 1099.99,
+      "imagem": "http://localhost:5173/public/imagens/microondas.jpg",
+      "id": "-0AaZAJWbZw"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
